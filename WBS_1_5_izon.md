@@ -62,19 +62,19 @@ end
 
 
 subgraph "三郎"
-
- boil_the_rice===>rice_cooker===>cook_rice;
+　direction LR
+ boil_the_rice===>rice_cooker===>cook_rice===>cut_cabbage;
 
 end
 
 
 subgraph "松子"
-
+　direction LR
  Lightly_sear_the_meat===>Add_the_sauce_and_bring_to_a_boil===>add_water===>seaweed===>Cut_tofu
 
 
 end
- bay_men-->  boil_men
-
+ bay_cabbage-->  boil_the_rice
+boil_the_rice-->  Lightly_sear_the_meat
 
 ```
